@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "Scribbler Notebook",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "// Searching and indexing methods\nconst humans = [\n  {\n\tid: 1001,\n\tname: \"Bruce\",\n\tisAvailable: true\n  },\n   {\n\tid: 1002,\n\tname: \"Clark\",\n\tisAvailable: true\n  },\n   {\n\tid: 1003,\n\tname: \"Diana\",\n\tisAvailable: true\n  },\n   {\n\tid: 1004,\n\tname: \"Barry\",\n\tisAvailable: false\n  }\n]\n\nconst hereos = [\"Batman\",\"Superman\",\"Wonder woman\",\"Flash\"]\n\n// find method\nconst findBatman = humans.find(hero => hero.name === \"Bruce\")\nscrib.show(findBatman) // { \"id\": 1001, \"name\": \"Bruce\", \"isAvailable\": true }\n\n// findIndex method\nconst findSupermanIndex = humans.findIndex(hero => hero.name === \"Clark\")\nscrib.show(findSupermanIndex) // 1\n\n// indexOf method\nconst findFlash = hereos.indexOf(\"Flash\")\nscrib.show(findFlash) // 3\n\n// lastIndex\nconst findSuperman = hereos.lastIndexOf(\"Superman\")\nscrib.show(findSuperman) // 1\n\n// includes\nconst wonderWomanInTeam = hereos.includes(\"Wonder woman\")\nscrib.show(wonderWomanInTeam) // true\n\n// some \nconst availableHeros = humans.some(human => human.isAvailable === true)\nscrib.show(availableHeros) // true\n\n// every\nconst allHeroesAvailable = humans.every(human => human.isAvailable === true)\nscrib.show(allHeroesAvailable) // false",
+      "status": "[31]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "{\n  \"id\": 1001,\n  \"name\": \"Bruce\",\n  \"isAvailable\": true\n} <br>1 <br>3 <br>1 <br>true <br>true <br>false <br>",
+      "type": "code"
+    },
+    {
+      "code": "// Chaining with other array methods like filter\nconst humans = [\n  {\n\tid: 1001,\n\tname: \"Bruce\",\n\tisAvailable: true\n  },\n   {\n\tid: 1002,\n\tname: \"Clark\",\n\tisAvailable: true\n  },\n   {\n\tid: 1003,\n\tname: \"Diana\",\n\tisAvailable: true\n  },\n   {\n\tid: 1004,\n\tname: \"Barry\",\n\tisAvailable: false\n  }\n]\n\nconst isBatmanAvailable = humans.filter(human => human.isAvailable).find(human => human.name === \"Bruce\")\nscrib.show(isBatmanAvailable)",
+      "status": "[32]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "{\n  \"id\": 1001,\n  \"name\": \"Bruce\",\n  \"isAvailable\": true\n} <br>",
+      "type": "code"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/scribbler",
+  "run_on_load": false
+}
