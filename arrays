@@ -9,9 +9,9 @@
   "jsnbversion": "v0.1",
   "cells": [
     {
-      "code": "",
-      "status": "",
-      "output": "",
+      "code": "scrib.show(\"hello\")",
+      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "hello <br>",
       "type": "code"
     }
   ],
