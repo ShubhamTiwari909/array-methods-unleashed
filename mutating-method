@@ -13,6 +13,18 @@
       "status": "[37]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Push -  [\n  \"html\",\n  \"css\",\n  \"javascript\",\n  \"react\",\n  \"nextjs\"\n] <br>Pop -  [\n  \"html\",\n  \"css\",\n  \"javascript\",\n  \"react\"\n] <br>Unshift -  [\n  \"nextjs\",\n  \"html\",\n  \"css\",\n  \"javascript\",\n  \"react\"\n] <br>Shift -  [\n  \"html\",\n  \"css\",\n  \"javascript\",\n  \"react\"\n] <br>Sort -  [\n  \"css\",\n  \"html\",\n  \"javascript\",\n  \"react\"\n] <br>Reverse -  [\n  \"react\",\n  \"javascript\",\n  \"html\",\n  \"css\"\n] <br>Splice -  [\n  \"HTML\",\n  \"javascript\",\n  \"html\",\n  \"css\"\n] <br>Fill -  [\n  \"Scribbler\",\n  \"Scribbler\",\n  \"html\",\n  \"css\"\n] <br>",
       "type": "code"
+    },
+    {
+      "code": "// Methods on steroids - conditional push\nconst tags = [\"html\", \"css\", \"javascript\", \"react\"]\n\nconst addValidTags = (isTagValid) => {\n  const invalidTag = \"java\"\n  if(isTagValid !== invalidTag){\n\ttags.push(isTagValid)\n  }\n}\naddValidTags(\"nextjs\") // will add this to the array\naddValidTags(\"java\") // won't add this to the array\nscrib.show(tags)",
+      "status": "",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "// Methods on steroids - conditional filtering\nconst tags = [\"html\", \"css\", \"javascript\", \"react\"]\n\nconst filters = (filterName) => {\n  if(filterName === \"sort\"){\n\ttags.sort()\n\treturn tags\n  }\n  else if(filterName === \"reverse\"){\n\ttags.reverse()\n\treturn tags\n  }\n  else {\n\treturn tags\n  }\n}\n\nfilters(\"sort\") // first sort the tags\nfilters(\"reverse\") // then reverse it",
+      "status": "",
+      "output": "",
+      "type": "code"
     }
   ],
   "source": "https://github.com/gopi-suvanam/scribbler",
