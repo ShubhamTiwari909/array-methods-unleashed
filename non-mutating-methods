@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "Scribbler Notebook",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "const technologies = [\n  {\n\tname:\"HTML\",\n\ttype:\"Frontend\"\n  },\n  {\n\tname:\"CSS\",\n\ttype:\"Frontend\"\n  },\n  {\n\tname:\"JS\",\n\ttype:\"Frontend\"\n  },\n  {\n\tname:\"React\",\n\ttype:\"Frontend\"\n  },\n  {\n\tname:\"Java\",\n\ttype:\"Backend\"\n  },\n  {\n\tname:\"Node\",\n\ttype:\"Backend\"\n  },\n]\n\nconst otherTechnologies = [\n  {\n\tname:\"Python\",\n\ttype:\"Backend\"\n  },\n  {\n\tname:\"Rust\",\n\ttype:\"Backend\"\n  },\n]\n\n// filter method\nconst frontendTechs = technologies.filter(technology => {\n  if(technology.type === \"Frontend\"){\n\treturn technology\n  }\n})\nscrib.show(\"Frontend techs - \",frontendTechs) // will return an array with items with type Frontend\n\n// map method\nconst frontendTechsNames = frontendTechs.map(technology => technology.name) // will return an array with technology names with type Frontend\nscrib.show(\"Frontend tech names - \",frontendTechsNames) // will return an array with items with type Frontend\n\n\n// slice method\nconst firstThreeItems = technologies.slice(0,3) // first three items in the array\nscrib.show(\"First three items - \",firstThreeItems)\n\n// concat method\nconst combinedTechnologies = technologies.concat(otherTechnologies)\nscrib.show(\"Combined technologies - \",combinedTechnologies)\n\n// flat method\nconst nestedArrays = [\"HTML\",\"CSS\",\"JS\",[\"REACT\",\"NEXTJS\", [\"TAILWIND\",[\"SCSS\"]]]]\nconst oneLevelFlat = nestedArrays.flat()\nconst twoLevelFlat = nestedArrays.flat(2)\nconst infinityLevelFlat = nestedArrays.flat(Infinity)\nscrib.show(oneLevelFlat)\nscrib.show(twoLevelFlat)\nscrib.show(infinityLevelFlat)\n\n// flatMap method\nconst webTechnologies = [\"HTML\",\"CSS\",\"JS\"]\nconst flatAndLowercase = webTechnologies.flatMap(technology => technology.toLowerCase())\nscrib.show(flatAndLowercase)",
+      "status": "[29]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Frontend techs -  [\n  {\n    \"name\": \"HTML\",\n    \"type\": \"Frontend\"\n  },\n  {\n    \"name\": \"CSS\",\n    \"type\": \"Frontend\"\n  },\n  {\n    \"name\": \"JS\",\n    \"type\": \"Frontend\"\n  },\n  {\n    \"name\": \"React\",\n    \"type\": \"Frontend\"\n  }\n] <br>Frontend tech names -  [\n  \"HTML\",\n  \"CSS\",\n  \"JS\",\n  \"React\"\n] <br>First three items -  [\n  {\n    \"name\": \"HTML\",\n    \"type\": \"Frontend\"\n  },\n  {\n    \"name\": \"CSS\",\n    \"type\": \"Frontend\"\n  },\n  {\n    \"name\": \"JS\",\n    \"type\": \"Frontend\"\n  }\n] <br>Combined technologies -  [\n  {\n    \"name\": \"HTML\",\n    \"type\": \"Frontend\"\n  },\n  {\n    \"name\": \"CSS\",\n    \"type\": \"Frontend\"\n  },\n  {\n    \"name\": \"JS\",\n    \"type\": \"Frontend\"\n  },\n  {\n    \"name\": \"React\",\n    \"type\": \"Frontend\"\n  },\n  {\n    \"name\": \"Java\",\n    \"type\": \"Backend\"\n  },\n  {\n    \"name\": \"Node\",\n    \"type\": \"Backend\"\n  },\n  {\n    \"name\": \"Python\",\n    \"type\": \"Backend\"\n  },\n  {\n    \"name\": \"Rust\",\n    \"type\": \"Backend\"\n  }\n] <br>[\n  \"HTML\",\n  \"CSS\",\n  \"JS\",\n  \"REACT\",\n  \"NEXTJS\",\n  [\n    \"TAILWIND\",\n    [\n      \"SCSS\"\n    ]\n  ]\n] <br>[\n  \"HTML\",\n  \"CSS\",\n  \"JS\",\n  \"REACT\",\n  \"NEXTJS\",\n  \"TAILWIND\",\n  [\n    \"SCSS\"\n  ]\n] <br>[\n  \"HTML\",\n  \"CSS\",\n  \"JS\",\n  \"REACT\",\n  \"NEXTJS\",\n  \"TAILWIND\",\n  \"SCSS\"\n] <br>[\n  \"html\",\n  \"css\",\n  \"js\"\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "// Chaining of methods\nconst technologies = [\n  {\n\tname:\"HTML\",\n\ttype:\"Frontend\"\n  },\n  {\n\tname:\"CSS\",\n\ttype:\"Frontend\"\n  },\n  {\n\tname:\"JS\",\n\ttype:\"Frontend\"\n  },\n  {\n\tname:\"React\",\n\ttype:\"Frontend\"\n  },\n  {\n\tname:\"Java\",\n\ttype:\"Backend\"\n  },\n  {\n\tname:\"Node\",\n\ttype:\"Backend\"\n  },\n]\n\n// Filter and map\nconst frontendNamesByChaining = technologies.filter(technology => technology.type === \"Frontend\").map(technology => technology.name)\nscrib.show(frontendNamesByChaining)\n\n// flat and map\nconst nestedArrays = [\"HTML\",\"CSS\",\"JS\",[\"REACT\",\"NEXTJS\", [\"TAILWIND\",[\"SCSS\"]]]]\nconst flatAndMapChaining = nestedArrays.flat(Infinity).map(technology => technology.toLowerCase())\nscrib.show(flatAndMapChaining)",
+      "status": "[30]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "[\n  \"HTML\",\n  \"CSS\",\n  \"JS\",\n  \"React\"\n] <br>[\n  \"html\",\n  \"css\",\n  \"js\",\n  \"react\",\n  \"nextjs\",\n  \"tailwind\",\n  \"scss\"\n] <br>",
+      "type": "code"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/scribbler",
+  "run_on_load": false
+}
