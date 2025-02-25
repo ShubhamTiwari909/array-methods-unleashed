@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "// mutating methods\nconst tags = [\"html\", \"css\", \"javascript\", \"react\"]\n\n// push\ntags.push(\"nextjs\")\nscrib.show(\"Push - \",tags)\n\n// pop\ntags.pop()\nscrib.show(\"Pop - \",tags)\n\n// unshift\ntags.unshift(\"nextjs\")\nscrib.show(\"Unshift - \",tags)\n\n// shift\ntags.shift()\nscrib.show(\"Shift - \",tags)\n\n// sort\ntags.sort()\nscrib.show(\"Sort - \",tags)\n\n// reverse\ntags.reverse()\nscrib.show(\"Reverse - \",tags)\n\n// splice\ntags.splice(0,0,\"HTML\") // will replace first index element with HTML\ntags.splice(0,2,\"HTML\") // will delete first 2 elements and replace with HTML\nscrib.show(\"Splice - \",tags)\n\n// fill\ntags.fill(\"Scribbler\",0,2) // replace first elements with Scribbler\nscrib.show(\"Fill - \",tags)",
+      "status": "[37]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Push -  [\n  \"html\",\n  \"css\",\n  \"javascript\",\n  \"react\",\n  \"nextjs\"\n] <br>Pop -  [\n  \"html\",\n  \"css\",\n  \"javascript\",\n  \"react\"\n] <br>Unshift -  [\n  \"nextjs\",\n  \"html\",\n  \"css\",\n  \"javascript\",\n  \"react\"\n] <br>Shift -  [\n  \"html\",\n  \"css\",\n  \"javascript\",\n  \"react\"\n] <br>Sort -  [\n  \"css\",\n  \"html\",\n  \"javascript\",\n  \"react\"\n] <br>Reverse -  [\n  \"react\",\n  \"javascript\",\n  \"html\",\n  \"css\"\n] <br>Splice -  [\n  \"HTML\",\n  \"javascript\",\n  \"html\",\n  \"css\"\n] <br>Fill -  [\n  \"Scribbler\",\n  \"Scribbler\",\n  \"html\",\n  \"css\"\n] <br>",
+      "type": "code"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/scribbler",
+  "run_on_load": false
+}
