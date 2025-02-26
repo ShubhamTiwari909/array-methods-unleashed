@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "name": "Scribbler Notebook",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "// join method\nconst superheroes = [\"Batman\", \"Superman\", \"Flash\", \"Wonder woman\"];\n\nconst joinHeroes = superheroes.join(\"\") // join without a separator\nconst joinHeroesWithHyphen = superheroes.join(\"-\") // join with a hyphen as a separator\nscrib.show(\"Without seperator - \",`<span style='color:cyan;font-weight:bold'>${joinHeroes}</span>`)\nscrib.show(\"Without seperator as hyphen - \",`<span style='color:cyan;font-weight:bold'>${joinHeroesWithHyphen}</span>`)",
+      "status": "[9]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Without seperator -  <span style=\"color:cyan;font-weight:bold\">BatmanSupermanFlashWonder woman</span> <br>Without seperator as hyphen -  <span style=\"color:cyan;font-weight:bold\">Batman-Superman-Flash-Wonder woman</span> <br>",
+      "type": "code"
+    },
+    {
+      "code": "// toString\nconst superheroes = [\"Batman\", \"Superman\", \"Flash\", \"Wonder woman\"];\nconst superheroesString = superheroes.toString();\nscrib.show(\"Superheroes array as string separated by comma - \",`<span style='color:cyan;font-weight:bold'>${superheroesString}</span>`)",
+      "status": "[10]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Superheroes array as string separated by comma -  <span style=\"color:cyan;font-weight:bold\">Batman,Superman,Flash,Wonder woman</span> <br>",
+      "type": "code"
+    },
+    {
+      "code": "// Chaining with other methods\nconst superheroes = [\"Batman\", \"Superman\", \"Flash\", \"Wonder woman\"];\nconst heroesWithLowerCase = superheroes.join(\" \").toLowerCase()\nscrib.show(\"Chaining with other methods - \",`<span style='color:cyan;font-weight:bold'>${heroesWithLowerCase}</span>`)",
+      "status": "[20]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Chaining with other methods -  <span style=\"color:cyan;font-weight:bold\">batman superman flash wonder woman</span> <br>",
+      "type": "code"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/scribbler",
+  "run_on_load": false
+}
