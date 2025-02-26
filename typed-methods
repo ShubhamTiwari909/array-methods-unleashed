@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "name": "Scribbler Notebook",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "// copyWithin method, rarely used\nconst superheroes = [\"Batman\", \"Superman\", \"Flash\", \"Wonder woman\"];\n\nconst copyFromIndex0To2 = superheroes.copyWithin(0, 2)\nscrib.show(`<span style='color:cyan;font-weight:bold'>${copyFromIndex0To2}</span>`)",
+      "status": "[10]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "<span style=\"color:cyan;font-weight:bold\">Flash,Wonder woman,Flash,Wonder woman</span> <br>",
+      "type": "code"
+    },
+    {
+      "code": "// from method\nconst batman = \"Batman\"\nconst arrayFromString = Array.from(batman)\nscrib.show(`<span style='color:cyan;font-weight:bold'>${arrayFromString}</span>`)",
+      "status": "[12]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "<span style=\"color:cyan;font-weight:bold\">B,a,t,m,a,n</span> <br>",
+      "type": "code"
+    },
+    {
+      "code": "const createArrayFromWords = Array.of(\"Batman\", \"Superman\", \"Flash\", \"Wonder woman\")\nscrib.show(`<span style='color:cyan;font-weight:bold'>${createArrayFromWords}</span>`)",
+      "status": "[11]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "<span style=\"color:cyan;font-weight:bold\">Batman,Superman,Flash,Wonder woman</span> <br>",
+      "type": "code"
+    },
+    {
+      "code": "// Chaining with other methods\nconst superhereos = \"Batman Superman Flash Wonder woman\";\nconst convertSuperheroesToArray = superhereos.split(\" \").join(\"-\");\nscrib.show()\nscrib.show(`<span style='color:cyan;font-weight:bold'>${Array.from(convertSuperheroesToArray)}</span>`)",
+      "status": "[16]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "<span style=\"color:cyan;font-weight:bold\">B,a,t,m,a,n,-,S,u,p,e,r,m,a,n,-,F,l,a,s,h,-,W,o,n,d,e,r,-,w,o,m,a,n</span> <br>",
+      "type": "code"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/scribbler",
+  "run_on_load": false
+}
