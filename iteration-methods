@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "Scribbler Notebook",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "const humans = [\n  {\n\tid: 1001,\n\tname: \"Bruce\",\n\tisAvailable: true\n  },\n   {\n\tid: 1002,\n\tname: \"Clark\",\n\tisAvailable: true\n  },\n   {\n\tid: 1003,\n\tname: \"Diana\",\n\tisAvailable: true\n  },\n   {\n\tid: 1004,\n\tname: \"Barry\",\n\tisAvailable: false\n  }\n]\n\n// forEach loop\nhumans.forEach(human => human.hasSuperPowers = true)\nscrib.show(\"For each loop - \", humans)",
+      "status": "[27]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "For each loop -  [\n  {\n    \"id\": 1001,\n    \"name\": \"Bruce\",\n    \"isAvailable\": true,\n    \"hasSuperPowers\": true\n  },\n  {\n    \"id\": 1002,\n    \"name\": \"Clark\",\n    \"isAvailable\": true,\n    \"hasSuperPowers\": true\n  },\n  {\n    \"id\": 1003,\n    \"name\": \"Diana\",\n    \"isAvailable\": true,\n    \"hasSuperPowers\": true\n  },\n  {\n    \"id\": 1004,\n    \"name\": \"Barry\",\n    \"isAvailable\": false,\n    \"hasSuperPowers\": true\n  }\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "const humans = [\n  {\n\tid: 1001,\n\tname: \"Bruce\",\n\tisAvailable: true\n  },\n   {\n\tid: 1002,\n\tname: \"Clark\",\n\tisAvailable: true\n  },\n   {\n\tid: 1003,\n\tname: \"Diana\",\n\tisAvailable: true\n  },\n   {\n\tid: 1004,\n\tname: \"Barry\",\n\tisAvailable: false\n  }\n]\n// entries\nscrib.show(\"ENTRIES\")\nfor (const [key, value] of Object.entries(humans)) {\n  scrib.show(`Key: ${key} and `, \"Value: \",value);\n}\n\n// keys\nscrib.show(\"KEYS\")\nfor (const key of Object.keys(humans)) {\n  scrib.show(`Key: ${key}`);\n}\n\n// values\nscrib.show(\"VALUES\")\nfor (const value of Object.values(humans)) {\n  scrib.show(\"Values: \",value);\n}",
+      "status": "[28]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "ENTRIES <br>Key: 0 and  Value:  {\n  \"id\": 1001,\n  \"name\": \"Bruce\",\n  \"isAvailable\": true\n} <br>Key: 1 and  Value:  {\n  \"id\": 1002,\n  \"name\": \"Clark\",\n  \"isAvailable\": true\n} <br>Key: 2 and  Value:  {\n  \"id\": 1003,\n  \"name\": \"Diana\",\n  \"isAvailable\": true\n} <br>Key: 3 and  Value:  {\n  \"id\": 1004,\n  \"name\": \"Barry\",\n  \"isAvailable\": false\n} <br>KEYS <br>Key: 0 <br>Key: 1 <br>Key: 2 <br>Key: 3 <br>VALUES <br>Values:  {\n  \"id\": 1001,\n  \"name\": \"Bruce\",\n  \"isAvailable\": true\n} <br>Values:  {\n  \"id\": 1002,\n  \"name\": \"Clark\",\n  \"isAvailable\": true\n} <br>Values:  {\n  \"id\": 1003,\n  \"name\": \"Diana\",\n  \"isAvailable\": true\n} <br>Values:  {\n  \"id\": 1004,\n  \"name\": \"Barry\",\n  \"isAvailable\": false\n} <br>",
+      "type": "code"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/scribbler",
+  "run_on_load": false
+}
